@@ -86,3 +86,25 @@ body {
 .app input[type="button"]:active {
     background-color: hsl(239, 75%, 60%);
 }
+
+.error {
+    animation: errorTransition 0.1s linear 10;
+}
+
+@keyframes errorTransition {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(2px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    75% {
+        transform: translateX(-2px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
