@@ -8,13 +8,22 @@ button.onclick = () => {
 
 function qrGenerator() {
 
-    const link = inputValue.value;
-    console.log(link)
-    qrCodeImg.innerHTML = "";
+    if (inputValue.value !== "") {
+        const link = inputValue.value;
+        console.log(link)
+        qrCodeImg.innerHTML = "";
 
-    new QRCode(qrCodeImg, {
-        text: link,
-        width: 250,
-        height: 250
-    });
+        new QRCode(qrCodeImg, {
+            text: link,
+            width: 250,
+            height: 250
+        });
+    } else {
+        inputValue.classList.add("error");
+        setTimeout(() => {
+            inputValue.classList.remove("error");
+            alert("Please enter your text/url");
+        }, 1000);
+
+    }
 }
