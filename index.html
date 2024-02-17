@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-Generator: generate QR for free</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+        <label for="input">Enter your text/url</label>
+        <img src="img.png" alt="logo" width="30px">
+        <br><br>
+        <input type="text" id="input">
+
+        <div class="img">
+            <img src="favicon.ico" alt="generated QR">
+        </div>
+        <input type="button" value="Generate QR Code">
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
